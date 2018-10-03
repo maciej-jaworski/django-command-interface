@@ -1,10 +1,7 @@
 django-nose
-coverage
 django-libs
-django-coverage
 ipdb
 flake8
 fabric
 factory_boy
 mock
-south

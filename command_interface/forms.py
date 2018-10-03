@@ -26,7 +26,7 @@ class CommandExecutionForm(forms.Form):
         self.command_dict = get_commands()
         self.allowed_commands = []
         apps = {}
-        for command_name, app_name in self.command_dict.iteritems():
+        for command_name, app_name in self.command_dict.items():
             if self.command_allowed(command_name, app_name):
                 self.allowed_commands.append(command_name)
                 command_class = load_command_class(app_name, command_name)
